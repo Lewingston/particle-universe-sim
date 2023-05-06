@@ -57,5 +57,20 @@ void StatusBar::draw(sf::RenderWindow& window) {
     text.setPosition(sf::Vector2f(dx, dy));
     window.draw(text);
 
+    dx += 350;
+    text.setString("[R] Reset particles");
+    text.setPosition(sf::Vector2f(dx, dy));
+    window.draw(text);
+
+    dx += 190;
+    text.setString("[T] Generate new rules");
+    text.setPosition(sf::Vector2f(dx, dy));
+    window.draw(text);
+
+    dx += 215;
+    text.setString("[ENTER] Generate new rules and particles");
+    text.setPosition(sf::Vector2f(dx, dy));
+    window.draw(text);
+
   }
 }
