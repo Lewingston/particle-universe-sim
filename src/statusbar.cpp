@@ -11,10 +11,7 @@ extern unsigned int res_fonts_ShareTechMono_Regular_ttf_len;
 StatusBar::StatusBar(int posX, int posY, int width, int height) :
   posX(posX), posY(posY), width(width), height(height) {
 
-  //std::string fontFile = "./res/fonts/ShareTechMono-Regular.ttf";
-  //if (!font.loadFromFile(fontFile)) {
   if (!font.loadFromMemory(&res_fonts_ShareTechMono_Regular_ttf, res_fonts_ShareTechMono_Regular_ttf_len)) {
-    //std::cerr << "Failed to load font file " << fontFile << std::endl;
     std::cerr << "Failed to load font from program data" << std::endl;
     fontLoaded = false;
   } else {
