@@ -4,6 +4,8 @@ A particle simulation based on procedural generated rules. Implemented in c++ us
 
 Inspired by this video: https://www.youtube.com/watch?v=0Kx4Y9TVMGg
 
+## Demo
+
 ![Demo](docs/psim_demo.gif)
 
 ## Dependencies
